@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机WLAN未开启" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnR-wL-fDV">
+                    <rect key="frame" x="51" y="30" width="158" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="JBt-on-tWe">
+                    <rect key="frame" x="0.0" y="62" width="260" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Plt-Em-Ox2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在设置中开启WLAN并连接以下Aura热点" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PV7-g7-Vdh">
+                    <rect key="frame" x="8" y="83" width="244" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="GWr-Mx-EP3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热点：MDMI_Aura90_XXXX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxh-i9-wHn">
+                    <rect key="frame" x="8" y="136" width="211" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jKJ-ts-Yrf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：12345678" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-dd-GJb">
+                    <rect key="frame" x="8" y="165" width="128" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aV5-BG-g47"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-6N-p1I">
+                    <rect key="frame" x="160" y="162" width="80" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7bX-CO-USM"/>
+                        <constraint firstAttribute="width" constant="80" id="chl-SJ-0mY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="拷贝密码">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="246" text="提示：设置WLAN成功后，请手动切回到Aura APP" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vei-7F-swx">
+                    <rect key="frame" x="8" y="198" width="244" height="94"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JBt-on-tWe" secondAttribute="trailing" id="5a1-zp-ON6"/>
+                <constraint firstAttribute="trailing" secondItem="MOc-6N-p1I" secondAttribute="trailing" constant="20" id="9TA-x3-eph"/>
+                <constraint firstAttribute="centerX" secondItem="jnR-wL-fDV" secondAttribute="centerX" id="DcU-4V-j0g"/>
+                <constraint firstItem="Vei-7F-swx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="E4J-cP-ckg"/>
+                <constraint firstItem="PV7-g7-Vdh" firstAttribute="top" secondItem="JBt-on-tWe" secondAttribute="bottom" constant="20" id="JEj-03-kiX"/>
+                <constraint firstItem="uxh-i9-wHn" firstAttribute="top" secondItem="PV7-g7-Vdh" secondAttribute="bottom" constant="12" id="SHC-Vs-cge"/>
+                <constraint firstItem="2pd-dd-GJb" firstAttribute="top" secondItem="uxh-i9-wHn" secondAttribute="bottom" constant="8" id="Vpj-Ql-YM8"/>
+                <constraint firstItem="uxh-i9-wHn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="WTg-5q-QY7"/>
+                <constraint firstItem="2pd-dd-GJb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ajy-eL-PFV"/>
+                <constraint firstItem="jnR-wL-fDV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="b2k-Xf-9lf"/>
+                <constraint firstItem="PV7-g7-Vdh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eDI-Qm-odv"/>
+                <constraint firstAttribute="trailing" secondItem="Vei-7F-swx" secondAttribute="trailing" constant="8" id="gau-5h-cpZ"/>
+                <constraint firstAttribute="bottom" secondItem="Vei-7F-swx" secondAttribute="bottom" constant="8" id="j9m-FP-TZw"/>
+                <constraint firstAttribute="trailing" secondItem="PV7-g7-Vdh" secondAttribute="trailing" constant="8" id="mPg-LC-8hr"/>
+                <constraint firstItem="Vei-7F-swx" firstAttribute="top" secondItem="2pd-dd-GJb" secondAttribute="bottom" constant="12" id="sf3-wo-D86"/>
+                <constraint firstItem="JBt-on-tWe" firstAttribute="top" secondItem="jnR-wL-fDV" secondAttribute="bottom" constant="8" id="uIW-9K-RSp"/>
+                <constraint firstItem="JBt-on-tWe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uTB-w9-2MH"/>
+                <constraint firstItem="MOc-6N-p1I" firstAttribute="baseline" secondItem="2pd-dd-GJb" secondAttribute="baseline" constant="1" id="z1e-Ut-gcq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="638" y="387"/>
+        </view>
+        <view contentMode="scaleToFill" id="LRH-Ht-edV">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未连接到Aura热点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0Z-B1-PMY">
+                    <rect key="frame" x="49" y="30" width="163" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="43N-ok-Vro">
+                    <rect key="frame" x="0.0" y="62" width="260" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Tgw-8O-GII"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请前往设置/WLAN，连接以下Aura热点" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rc-ID-7TK">
+                    <rect key="frame" x="8" y="83" width="244" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="uzj-nq-si1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热点：MDMI_Aura90_XXXX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tG4-y6-X0D">
+                    <rect key="frame" x="8" y="136" width="211" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="iX2-Qx-Yng"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：12345678" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-Vh-3mn">
+                    <rect key="frame" x="8" y="165" width="128" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ArK-ef-UuQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-jb-QJr">
+                    <rect key="frame" x="160" y="161" width="80" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5vJ-oC-bEW"/>
+                        <constraint firstAttribute="width" constant="80" id="uTH-Xm-t5C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="拷贝密码">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="246" text="提示：设置WLAN成功后，请手动切回到Aura APP" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vl8-9J-RD9">
+                    <rect key="frame" x="8" y="198" width="244" height="94"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qa4-jb-QJr" firstAttribute="baseline" secondItem="ftJ-Vh-3mn" secondAttribute="baseline" id="1jn-cE-2zt"/>
+                <constraint firstItem="6Rc-ID-7TK" firstAttribute="top" secondItem="43N-ok-Vro" secondAttribute="bottom" constant="20" id="4AJ-3z-LET"/>
+                <constraint firstAttribute="trailing" secondItem="6Rc-ID-7TK" secondAttribute="trailing" constant="8" id="9os-Af-UWo"/>
+                <constraint firstItem="6Rc-ID-7TK" firstAttribute="leading" secondItem="LRH-Ht-edV" secondAttribute="leading" constant="8" id="HoA-4N-Rzi"/>
+                <constraint firstItem="ftJ-Vh-3mn" firstAttribute="leading" secondItem="LRH-Ht-edV" secondAttribute="leading" constant="8" id="IFQ-3s-AzQ"/>
+                <constraint firstItem="vl8-9J-RD9" firstAttribute="top" secondItem="ftJ-Vh-3mn" secondAttribute="bottom" constant="12" id="Isu-Uv-qZG"/>
+                <constraint firstItem="D0Z-B1-PMY" firstAttribute="top" secondItem="LRH-Ht-edV" secondAttribute="top" constant="30" id="MbO-0p-Jdi"/>
+                <constraint firstItem="43N-ok-Vro" firstAttribute="leading" secondItem="LRH-Ht-edV" secondAttribute="leading" id="UVo-cO-Oes"/>
+                <constraint firstItem="tG4-y6-X0D" firstAttribute="leading" secondItem="LRH-Ht-edV" secondAttribute="leading" constant="8" id="V95-LR-FUG"/>
+                <constraint firstItem="ftJ-Vh-3mn" firstAttribute="top" secondItem="tG4-y6-X0D" secondAttribute="bottom" constant="8" id="YyQ-nv-h46"/>
+                <constraint firstAttribute="centerX" secondItem="D0Z-B1-PMY" secondAttribute="centerX" id="ad4-P1-3vl"/>
+                <constraint firstAttribute="trailing" secondItem="43N-ok-Vro" secondAttribute="trailing" id="bqM-X5-QPD"/>
+                <constraint firstAttribute="bottom" secondItem="vl8-9J-RD9" secondAttribute="bottom" constant="8" id="crC-E9-r1A"/>
+                <constraint firstAttribute="trailing" secondItem="Qa4-jb-QJr" secondAttribute="trailing" constant="20" id="d8L-r3-WUd"/>
+                <constraint firstItem="tG4-y6-X0D" firstAttribute="top" secondItem="6Rc-ID-7TK" secondAttribute="bottom" constant="12" id="gab-c2-3pH"/>
+                <constraint firstAttribute="trailing" secondItem="vl8-9J-RD9" secondAttribute="trailing" constant="8" id="sgK-Zh-bQZ"/>
+                <constraint firstItem="43N-ok-Vro" firstAttribute="top" secondItem="D0Z-B1-PMY" secondAttribute="bottom" constant="8" id="tR2-XC-zFq"/>
+                <constraint firstItem="vl8-9J-RD9" firstAttribute="leading" secondItem="LRH-Ht-edV" secondAttribute="leading" constant="8" id="uOX-DL-fuU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="290" y="364"/>
+        </view>
+        <view contentMode="scaleToFill" id="0dv-N0-XBV">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连接Aura失败" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jln-vq-tSd">
+                    <rect key="frame" x="69" y="30" width="123" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="9uz-HM-fIO">
+                    <rect key="frame" x="0.0" y="62" width="260" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="8BE-R2-OqC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*如您的Aura网络图标有遮蔽，则你的手机可能正与Aura处于不同频段，无法连接" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8K-HW-L1F">
+                    <rect key="frame" x="8" y="83" width="244" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="pz0-I2-rcP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请尝试重新启动Aura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8s-5A-Jga">
+                    <rect key="frame" x="8" y="156" width="161" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请尝试重新打开手机WLAN连接" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMA-jA-OER">
+                    <rect key="frame" x="8" y="189" width="242" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHO-Zk-azO">
+                    <rect key="frame" x="80" y="240" width="100" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ZBt-d6-gLt"/>
+                        <constraint firstAttribute="height" constant="30" id="cP3-T1-ChO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="重新连接">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Jln-vq-tSd" secondAttribute="centerX" id="55w-nU-rW1"/>
+                <constraint firstItem="I8s-5A-Jga" firstAttribute="top" secondItem="Z8K-HW-L1F" secondAttribute="bottom" constant="12" id="6F0-lE-wZC"/>
+                <constraint firstItem="9uz-HM-fIO" firstAttribute="leading" secondItem="0dv-N0-XBV" secondAttribute="leading" id="6P8-kh-yfj"/>
+                <constraint firstItem="Z8K-HW-L1F" firstAttribute="top" secondItem="9uz-HM-fIO" secondAttribute="bottom" constant="20" id="DQf-89-o5Z"/>
+                <constraint firstAttribute="centerX" secondItem="qHO-Zk-azO" secondAttribute="centerX" id="KWZ-1B-aX0"/>
+                <constraint firstItem="jMA-jA-OER" firstAttribute="leading" secondItem="0dv-N0-XBV" secondAttribute="leading" constant="8" id="LNl-Hq-MuF"/>
+                <constraint firstItem="Z8K-HW-L1F" firstAttribute="leading" secondItem="0dv-N0-XBV" secondAttribute="leading" constant="8" id="Pl6-HC-AY3"/>
+                <constraint firstItem="9uz-HM-fIO" firstAttribute="top" secondItem="Jln-vq-tSd" secondAttribute="bottom" constant="8" id="V7R-oy-1tC"/>
+                <constraint firstAttribute="trailing" secondItem="Z8K-HW-L1F" secondAttribute="trailing" constant="8" id="Wga-rk-cN2"/>
+                <constraint firstItem="jMA-jA-OER" firstAttribute="top" secondItem="I8s-5A-Jga" secondAttribute="bottom" constant="12" id="X2U-W0-nOa"/>
+                <constraint firstItem="Jln-vq-tSd" firstAttribute="top" secondItem="0dv-N0-XBV" secondAttribute="top" constant="30" id="Xgr-M3-FkS"/>
+                <constraint firstItem="I8s-5A-Jga" firstAttribute="leading" secondItem="0dv-N0-XBV" secondAttribute="leading" constant="8" id="fNW-t6-Epw"/>
+                <constraint firstItem="qHO-Zk-azO" firstAttribute="top" secondItem="jMA-jA-OER" secondAttribute="bottom" constant="30" id="oaX-iZ-2c8"/>
+                <constraint firstAttribute="trailing" secondItem="9uz-HM-fIO" secondAttribute="trailing" id="wFk-Ge-LUg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="290" y="710"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

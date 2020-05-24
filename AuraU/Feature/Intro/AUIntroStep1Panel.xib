@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AUIntroStep1Panel">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hte-rF-yQx">
+                    <rect key="frame" x="117" y="50" width="87" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="2cs-OV-woM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lay the mobile phone flat on the Aura desktop to show the main menu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4X-kN-Bje">
+                    <rect key="frame" x="8" y="264" width="304" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8jf-Ko-WO7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guid_gesture_flat.png" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-pP-xwL">
+                    <rect key="frame" x="75" y="86" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jhC-pP-xwL" secondAttribute="height" id="Ona-bY-zNH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lay the mobile phone flat on the Aura desktop to show the main menu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuH-fT-fH7">
+                    <rect key="frame" x="8" y="478" width="304" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QVe-lY-EqL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guid_gesture_shake.png" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-3C-Pkm">
+                    <rect key="frame" x="81" y="312" width="158" height="158"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HbQ-3C-Pkm" secondAttribute="height" id="Ko7-vs-1ds"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RuH-fT-fH7" firstAttribute="top" secondItem="HbQ-3C-Pkm" secondAttribute="bottom" constant="8" id="58j-An-XAV"/>
+                <constraint firstItem="hte-rF-yQx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="AiF-yB-nTe"/>
+                <constraint firstAttribute="centerX" secondItem="HbQ-3C-Pkm" secondAttribute="centerX" id="BOa-Nv-biB"/>
+                <constraint firstAttribute="centerX" secondItem="hte-rF-yQx" secondAttribute="centerX" id="Blp-up-VZv"/>
+                <constraint firstItem="HbQ-3C-Pkm" firstAttribute="top" secondItem="A4X-kN-Bje" secondAttribute="bottom" constant="8" id="RjN-0d-u4y"/>
+                <constraint firstAttribute="centerX" secondItem="A4X-kN-Bje" secondAttribute="centerX" id="UWS-Lb-1jK"/>
+                <constraint firstAttribute="trailing" secondItem="A4X-kN-Bje" secondAttribute="trailing" constant="8" id="UYN-GS-nzS"/>
+                <constraint firstItem="A4X-kN-Bje" firstAttribute="top" secondItem="jhC-pP-xwL" secondAttribute="bottom" constant="8" id="Zim-4u-ddo"/>
+                <constraint firstAttribute="bottom" secondItem="RuH-fT-fH7" secondAttribute="bottom" constant="50" id="aZZ-RP-t1z"/>
+                <constraint firstAttribute="centerY" secondItem="A4X-kN-Bje" secondAttribute="centerY" id="d9h-Bf-74d"/>
+                <constraint firstAttribute="trailing" secondItem="RuH-fT-fH7" secondAttribute="trailing" constant="8" id="gRd-cn-0Hx"/>
+                <constraint firstItem="jhC-pP-xwL" firstAttribute="top" secondItem="hte-rF-yQx" secondAttribute="bottom" constant="8" id="hTF-zR-vTn"/>
+                <constraint firstAttribute="centerX" secondItem="jhC-pP-xwL" secondAttribute="centerX" id="u45-zu-Nhb"/>
+                <constraint firstItem="A4X-kN-Bje" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="u9U-AD-7Re"/>
+                <constraint firstItem="RuH-fT-fH7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="yYO-Sb-hbj"/>
+            </constraints>
+            <connections>
+                <outlet property="tips1Label" destination="A4X-kN-Bje" id="iuF-3w-29a"/>
+                <outlet property="tips2Label" destination="RuH-fT-fH7" id="c0K-3O-OKr"/>
+                <outlet property="titleLabel" destination="hte-rF-yQx" id="dcB-oN-JXw"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="367"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guid_gesture_flat.png" width="198" height="198"/>
+        <image name="guid_gesture_shake.png" width="198" height="198"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

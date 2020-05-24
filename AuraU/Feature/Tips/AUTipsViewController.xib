@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AUTipsViewController">
+            <connections>
+                <outlet property="failureTip1Label" destination="Gd7-Lj-RR2" id="ahB-HR-el9"/>
+                <outlet property="failureTip2Label" destination="FbD-yU-EbG" id="3cl-ep-ver"/>
+                <outlet property="failureTip3Label" destination="gf5-8Z-IwS" id="Uor-sO-W3W"/>
+                <outlet property="failureTitleLabel" destination="zTo-CW-vU6" id="Ffd-D3-0eB"/>
+                <outlet property="failureView" destination="hFf-J1-2NH" id="3oK-0F-Sy5"/>
+                <outlet property="reconnectButton" destination="XVP-v4-hta" id="7vE-oh-OLL"/>
+                <outlet property="unconnectedDescriptionLabel" destination="J6w-Vn-tuR" id="XN3-Ab-FYj"/>
+                <outlet property="unconnectedTitleLabel" destination="6hs-uf-HL3" id="7ea-6G-TKk"/>
+                <outlet property="unconnectedView" destination="Gj9-fB-Esy" id="aHV-r8-OHg"/>
+                <outlet property="unopenedDescriptionLabel" destination="4gU-qT-4Kh" id="M0d-Ih-roL"/>
+                <outlet property="unopenedTitleLabel" destination="q5J-Kx-hdH" id="h74-aZ-FeC"/>
+                <outlet property="unopenedView" destination="ck7-d6-zPz" id="oYw-Ck-CHw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="hotspotsLabels" destination="Zv0-je-b9I" id="Ppl-3a-oNq"/>
+                <outletCollection property="passwordLabels" destination="iVU-c6-nai" id="A8u-TI-nEV"/>
+                <outletCollection property="hotspotsLabels" destination="3q4-Dm-1DN" id="Qcy-J2-9Fm"/>
+                <outletCollection property="passwordLabels" destination="ze0-7C-T1g" id="dXl-GA-yuX"/>
+                <outletCollection property="passwordButtons" destination="yMa-bo-NZD" id="HqR-cn-Vdp"/>
+                <outletCollection property="passwordButtons" destination="J5f-cy-D0A" id="fXu-rD-Nuv"/>
+                <outletCollection property="tipsLabels" destination="unK-tR-LBQ" id="mTK-Lu-6ep"/>
+                <outletCollection property="tipsLabels" destination="CxU-IQ-Bkk" id="TRa-0f-m7I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-J1-2NH" userLabel="failureView">
+                    <rect key="frame" x="0.0" y="0.0" width="275" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连接Aura失败" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-CW-vU6">
+                            <rect key="frame" x="82" y="30" width="111" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="DCy-3f-CZq">
+                            <rect key="frame" x="0.0" y="60" width="275" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="nDO-sl-Og4"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd7-Lj-RR2">
+                            <rect key="frame" x="8" y="73" width="261" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="96" id="f1D-Vs-2Rv"/>
+                            </constraints>
+                            <string key="text">*If your Aura network icon has masking, your mobile phone may be in a different frequency band from Aura and can't connect to WiFi</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请尝试重新启动Aura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbD-yU-EbG">
+                            <rect key="frame" x="8" y="173" width="152" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Please try to reopen WLAN connection of your mobile phone" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-8Z-IwS">
+                            <rect key="frame" x="8" y="197" width="259" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Btc-ol-Qap"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVP-v4-hta">
+                            <rect key="frame" x="78" y="245" width="120" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="DMf-XK-L9r"/>
+                                <constraint firstAttribute="height" constant="34" id="qPB-RI-Jmx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="重新连接">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="reconnectButtonPressed:" destination="-1" eventType="touchUpInside" id="3xl-7E-0vH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DCy-3f-CZq" firstAttribute="top" secondItem="zTo-CW-vU6" secondAttribute="bottom" constant="8" id="3Fe-8A-NDG"/>
+                        <constraint firstItem="XVP-v4-hta" firstAttribute="top" secondItem="gf5-8Z-IwS" secondAttribute="bottom" constant="8" id="6Yu-Ii-evX"/>
+                        <constraint firstAttribute="centerX" secondItem="zTo-CW-vU6" secondAttribute="centerX" id="DUd-pC-mIz"/>
+                        <constraint firstItem="FbD-yU-EbG" firstAttribute="top" secondItem="Gd7-Lj-RR2" secondAttribute="bottom" constant="4" id="NWv-tC-RJE"/>
+                        <constraint firstItem="gf5-8Z-IwS" firstAttribute="top" secondItem="FbD-yU-EbG" secondAttribute="bottom" constant="4" id="NcX-eU-dh2"/>
+                        <constraint firstItem="zTo-CW-vU6" firstAttribute="top" secondItem="hFf-J1-2NH" secondAttribute="top" constant="30" id="V7b-ET-LsY"/>
+                        <constraint firstAttribute="centerX" secondItem="XVP-v4-hta" secondAttribute="centerX" id="Xs3-Mh-TB6"/>
+                        <constraint firstItem="DCy-3f-CZq" firstAttribute="leading" secondItem="hFf-J1-2NH" secondAttribute="leading" id="ZfY-wb-hZs"/>
+                        <constraint firstItem="Gd7-Lj-RR2" firstAttribute="leading" secondItem="hFf-J1-2NH" secondAttribute="leading" constant="8" id="dYD-D7-Ayr"/>
+                        <constraint firstAttribute="trailing" secondItem="DCy-3f-CZq" secondAttribute="trailing" id="eT9-nh-LQE"/>
+                        <constraint firstAttribute="trailing" secondItem="Gd7-Lj-RR2" secondAttribute="trailing" constant="6" id="gCZ-kJ-ciD"/>
+                        <constraint firstItem="Gd7-Lj-RR2" firstAttribute="top" secondItem="DCy-3f-CZq" secondAttribute="bottom" constant="12" id="rsr-jx-Nqo"/>
+                        <constraint firstAttribute="trailing" secondItem="gf5-8Z-IwS" secondAttribute="trailing" constant="8" id="sD2-UX-GPa"/>
+                        <constraint firstItem="FbD-yU-EbG" firstAttribute="leading" secondItem="hFf-J1-2NH" secondAttribute="leading" constant="8" id="sKG-HJ-l5D"/>
+                        <constraint firstItem="gf5-8Z-IwS" firstAttribute="leading" secondItem="hFf-J1-2NH" secondAttribute="leading" constant="8" id="zPs-iU-23W"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj9-fB-Esy" userLabel="unconnectedView">
+                    <rect key="frame" x="0.0" y="0.0" width="275" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未连接到Aura热点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hs-uf-HL3">
+                            <rect key="frame" x="64" y="30" width="147" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-pt-d3p">
+                            <rect key="frame" x="0.0" y="60" width="275" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="5l3-XS-bt3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请前往设置/WLAN，连接以下Aura热点" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6w-Vn-tuR">
+                            <rect key="frame" x="8" y="81" width="261" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="7xR-6D-NRt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热点：MDMI_******_******" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv0-je-b9I">
+                            <rect key="frame" x="8" y="134" width="177" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="G5D-Xc-Ylq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：12345678" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVU-c6-nai">
+                            <rect key="frame" x="8" y="163" width="121" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="6us-M0-kJc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5f-cy-D0A">
+                            <rect key="frame" x="177" y="160" width="90" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="akH-lC-oNk"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="bFb-Ol-zAw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="拷贝密码">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="passwordButtonPressed:" destination="-1" eventType="touchUpInside" id="xf1-6n-9bB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="246" text="提示：设置WLAN成功后，请手动切回到Aura APP" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-IQ-Bkk">
+                            <rect key="frame" x="8" y="196" width="259" height="96"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iVU-c6-nai" firstAttribute="top" secondItem="Zv0-je-b9I" secondAttribute="bottom" constant="8" id="2DK-o8-vVS"/>
+                        <constraint firstItem="E2d-pt-d3p" firstAttribute="top" secondItem="6hs-uf-HL3" secondAttribute="bottom" constant="8" id="9dU-a9-xIH"/>
+                        <constraint firstItem="J6w-Vn-tuR" firstAttribute="top" secondItem="E2d-pt-d3p" secondAttribute="bottom" constant="20" id="9fy-9M-pV9"/>
+                        <constraint firstAttribute="trailing" secondItem="J5f-cy-D0A" secondAttribute="trailing" constant="8" id="AZ1-co-xzn"/>
+                        <constraint firstItem="J5f-cy-D0A" firstAttribute="baseline" secondItem="iVU-c6-nai" secondAttribute="baseline" id="BWK-SF-PsS"/>
+                        <constraint firstItem="iVU-c6-nai" firstAttribute="leading" secondItem="Gj9-fB-Esy" secondAttribute="leading" constant="8" id="Dcd-uR-bXD"/>
+                        <constraint firstItem="CxU-IQ-Bkk" firstAttribute="leading" secondItem="Gj9-fB-Esy" secondAttribute="leading" constant="8" id="EwO-6a-3an"/>
+                        <constraint firstItem="E2d-pt-d3p" firstAttribute="leading" secondItem="Gj9-fB-Esy" secondAttribute="leading" id="I6B-tI-f8Z"/>
+                        <constraint firstItem="Zv0-je-b9I" firstAttribute="top" secondItem="J6w-Vn-tuR" secondAttribute="bottom" constant="12" id="IOy-hB-W8K"/>
+                        <constraint firstItem="J6w-Vn-tuR" firstAttribute="leading" secondItem="Gj9-fB-Esy" secondAttribute="leading" constant="8" id="LBc-Do-8cR"/>
+                        <constraint firstAttribute="trailing" secondItem="E2d-pt-d3p" secondAttribute="trailing" id="Lej-Sx-Zn6"/>
+                        <constraint firstAttribute="centerX" secondItem="6hs-uf-HL3" secondAttribute="centerX" id="PSV-zR-MoE"/>
+                        <constraint firstAttribute="bottom" secondItem="CxU-IQ-Bkk" secondAttribute="bottom" constant="8" id="U4Y-Yt-fqI"/>
+                        <constraint firstItem="6hs-uf-HL3" firstAttribute="top" secondItem="Gj9-fB-Esy" secondAttribute="top" constant="30" id="dwk-o0-Lvg"/>
+                        <constraint firstItem="CxU-IQ-Bkk" firstAttribute="top" secondItem="iVU-c6-nai" secondAttribute="bottom" constant="12" id="jun-Xb-dtz"/>
+                        <constraint firstAttribute="trailing" secondItem="J6w-Vn-tuR" secondAttribute="trailing" constant="6" id="prO-Sp-JJk"/>
+                        <constraint firstItem="Zv0-je-b9I" firstAttribute="leading" secondItem="Gj9-fB-Esy" secondAttribute="leading" constant="8" id="pxM-lg-1Q4"/>
+                        <constraint firstAttribute="trailing" secondItem="CxU-IQ-Bkk" secondAttribute="trailing" constant="8" id="vUK-T3-0fB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ck7-d6-zPz" userLabel="unopenedView">
+                    <rect key="frame" x="0.0" y="0.0" width="275" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected to Aura hotspot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5J-Kx-hdH">
+                            <rect key="frame" x="9" y="30" width="258" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="wrZ-yI-Ufe">
+                            <rect key="frame" x="0.0" y="60" width="275" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="KpS-Eu-4TP"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable WLAN and connect to an Aura hotspot below" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-qT-4Kh">
+                            <rect key="frame" x="8" y="81" width="261" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="aKb-IC-gOr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热点：MDMI_******_******" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q4-Dm-1DN">
+                            <rect key="frame" x="8" y="134" width="177" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="E9F-fw-W03"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password: 12345678" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-7C-T1g">
+                            <rect key="frame" x="8" y="163" width="153" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="hsl-OG-w83"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMa-bo-NZD">
+                            <rect key="frame" x="165" y="160" width="102" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="iQy-Ck-lS2"/>
+                                <constraint firstAttribute="height" constant="30" id="suP-tT-x5G"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Copy password">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="passwordButtonPressed:" destination="-1" eventType="touchUpInside" id="4ZN-ef-5rC"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="246" text="提示：设置WLAN成功后，请手动切回到Aura APP" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unK-tR-LBQ">
+                            <rect key="frame" x="8" y="196" width="259" height="96"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yMa-bo-NZD" firstAttribute="baseline" secondItem="ze0-7C-T1g" secondAttribute="baseline" id="2h6-K2-JJ4"/>
+                        <constraint firstAttribute="trailing" secondItem="unK-tR-LBQ" secondAttribute="trailing" constant="8" id="57C-HB-Gt3"/>
+                        <constraint firstItem="wrZ-yI-Ufe" firstAttribute="leading" secondItem="ck7-d6-zPz" secondAttribute="leading" id="96R-gf-A2r"/>
+                        <constraint firstItem="unK-tR-LBQ" firstAttribute="leading" secondItem="ck7-d6-zPz" secondAttribute="leading" constant="8" id="EpO-Il-8Pw"/>
+                        <constraint firstItem="3q4-Dm-1DN" firstAttribute="top" secondItem="4gU-qT-4Kh" secondAttribute="bottom" constant="12" id="ItB-GY-PoP"/>
+                        <constraint firstItem="unK-tR-LBQ" firstAttribute="top" secondItem="ze0-7C-T1g" secondAttribute="bottom" constant="12" id="JCh-ir-ADt"/>
+                        <constraint firstItem="wrZ-yI-Ufe" firstAttribute="top" secondItem="q5J-Kx-hdH" secondAttribute="bottom" constant="8" id="K9l-2k-u1K"/>
+                        <constraint firstItem="ze0-7C-T1g" firstAttribute="leading" secondItem="ck7-d6-zPz" secondAttribute="leading" constant="8" id="M7J-1P-jMD"/>
+                        <constraint firstItem="3q4-Dm-1DN" firstAttribute="leading" secondItem="ck7-d6-zPz" secondAttribute="leading" constant="8" id="MBc-D4-d4e"/>
+                        <constraint firstItem="4gU-qT-4Kh" firstAttribute="top" secondItem="wrZ-yI-Ufe" secondAttribute="bottom" constant="20" id="Pf0-41-TT3"/>
+                        <constraint firstAttribute="bottom" secondItem="unK-tR-LBQ" secondAttribute="bottom" constant="8" id="QUI-vS-0yN"/>
+                        <constraint firstItem="ze0-7C-T1g" firstAttribute="top" secondItem="3q4-Dm-1DN" secondAttribute="bottom" constant="8" id="TFY-R6-Lwb"/>
+                        <constraint firstAttribute="trailing" secondItem="yMa-bo-NZD" secondAttribute="trailing" constant="8" id="Ztt-q8-TEM"/>
+                        <constraint firstItem="q5J-Kx-hdH" firstAttribute="top" secondItem="ck7-d6-zPz" secondAttribute="top" constant="30" id="coP-JM-GHw"/>
+                        <constraint firstAttribute="trailing" secondItem="wrZ-yI-Ufe" secondAttribute="trailing" id="gWN-GD-JG3"/>
+                        <constraint firstAttribute="centerX" secondItem="q5J-Kx-hdH" secondAttribute="centerX" id="gfx-AZ-tiD"/>
+                        <constraint firstAttribute="trailing" secondItem="4gU-qT-4Kh" secondAttribute="trailing" constant="6" id="hbd-5V-Eca"/>
+                        <constraint firstItem="4gU-qT-4Kh" firstAttribute="leading" secondItem="ck7-d6-zPz" secondAttribute="leading" constant="8" id="ufT-xA-1dg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gj9-fB-Esy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="45h-Ko-QDp"/>
+                <constraint firstItem="Gj9-fB-Esy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8gq-6y-MNM"/>
+                <constraint firstAttribute="bottom" secondItem="hFf-J1-2NH" secondAttribute="bottom" id="BKn-pP-xgs"/>
+                <constraint firstAttribute="bottom" secondItem="ck7-d6-zPz" secondAttribute="bottom" id="GjX-8U-DAX"/>
+                <constraint firstItem="hFf-J1-2NH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N7j-JK-3v7"/>
+                <constraint firstAttribute="trailing" secondItem="ck7-d6-zPz" secondAttribute="trailing" id="Rba-jG-5fs"/>
+                <constraint firstItem="hFf-J1-2NH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S0h-Pv-ItQ"/>
+                <constraint firstItem="ck7-d6-zPz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wyo-fg-eo5"/>
+                <constraint firstAttribute="trailing" secondItem="hFf-J1-2NH" secondAttribute="trailing" id="XEH-Rx-xm1"/>
+                <constraint firstAttribute="bottom" secondItem="Gj9-fB-Esy" secondAttribute="bottom" id="eZG-ES-um7"/>
+                <constraint firstAttribute="trailing" secondItem="Gj9-fB-Esy" secondAttribute="trailing" id="xHf-GW-wD2"/>
+                <constraint firstItem="ck7-d6-zPz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xKc-8f-Odl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="253" y="367"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

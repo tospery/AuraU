@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AUHomeTipsFailureViewController">
+            <connections>
+                <outlet property="reconnectButton" destination="M0Z-YT-s16" id="QjZ-Qh-94v"/>
+                <outlet property="tip1Label" destination="b8k-Ok-PhY" id="lC0-LT-GwQ"/>
+                <outlet property="tip2Label" destination="TyG-GF-lHj" id="vsY-n1-pBN"/>
+                <outlet property="tip3Label" destination="ZSa-RD-Gkx" id="cuu-uJ-SB5"/>
+                <outlet property="titleLabel" destination="pBx-g3-M1Z" id="x5B-as-kuP"/>
+                <outlet property="view" destination="qVO-Ef-ASg" id="4th-ve-PVX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qVO-Ef-ASg">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连接Aura失败" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBx-g3-M1Z">
+                    <rect key="frame" x="69" y="30" width="123" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="5hC-oz-faM">
+                    <rect key="frame" x="0.0" y="62" width="260" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Atc-7W-ykb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8k-Ok-PhY">
+                    <rect key="frame" x="8" y="75" width="244" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="PyN-f5-A9T"/>
+                    </constraints>
+                    <string key="text">*If your Aura network icon has masking, your mobile phone may be in a different frequency band from Aura and can't connect to WiFi</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请尝试重新启动Aura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyG-GF-lHj">
+                    <rect key="frame" x="8" y="175" width="152" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Please try to reopen WLAN connection of your mobile phone" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSa-RD-Gkx">
+                    <rect key="frame" x="8" y="199" width="244" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ERP-gO-uZZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0Z-YT-s16">
+                    <rect key="frame" x="70" y="247" width="120" height="34"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="NwJ-gk-8Of"/>
+                        <constraint firstAttribute="height" constant="34" id="f3z-Qb-ljb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="重新连接">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reconnectButtonPressed:" destination="-1" eventType="touchUpInside" id="mcu-x8-Ftv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZSa-RD-Gkx" firstAttribute="top" secondItem="TyG-GF-lHj" secondAttribute="bottom" constant="4" id="0go-bo-lsK"/>
+                <constraint firstItem="5hC-oz-faM" firstAttribute="leading" secondItem="qVO-Ef-ASg" secondAttribute="leading" id="3h5-Xg-2Jt"/>
+                <constraint firstItem="ZSa-RD-Gkx" firstAttribute="leading" secondItem="qVO-Ef-ASg" secondAttribute="leading" constant="8" id="4XS-VW-H0c"/>
+                <constraint firstItem="TyG-GF-lHj" firstAttribute="leading" secondItem="qVO-Ef-ASg" secondAttribute="leading" constant="8" id="5dH-Px-IFu"/>
+                <constraint firstItem="M0Z-YT-s16" firstAttribute="top" secondItem="ZSa-RD-Gkx" secondAttribute="bottom" constant="8" id="DiD-om-rWm"/>
+                <constraint firstItem="b8k-Ok-PhY" firstAttribute="leading" secondItem="qVO-Ef-ASg" secondAttribute="leading" constant="8" id="FDs-4Y-x5Y"/>
+                <constraint firstItem="5hC-oz-faM" firstAttribute="top" secondItem="pBx-g3-M1Z" secondAttribute="bottom" constant="8" id="Je9-nC-hI5"/>
+                <constraint firstItem="TyG-GF-lHj" firstAttribute="top" secondItem="b8k-Ok-PhY" secondAttribute="bottom" constant="4" id="Lmo-y5-ZRf"/>
+                <constraint firstAttribute="centerX" secondItem="M0Z-YT-s16" secondAttribute="centerX" id="LnN-Wp-dde"/>
+                <constraint firstAttribute="trailing" secondItem="ZSa-RD-Gkx" secondAttribute="trailing" constant="8" id="Stv-TQ-9u8"/>
+                <constraint firstItem="b8k-Ok-PhY" firstAttribute="top" secondItem="5hC-oz-faM" secondAttribute="bottom" constant="12" id="XqE-DM-1UM"/>
+                <constraint firstItem="pBx-g3-M1Z" firstAttribute="top" secondItem="qVO-Ef-ASg" secondAttribute="top" constant="30" id="XxJ-qK-qu9"/>
+                <constraint firstAttribute="centerX" secondItem="pBx-g3-M1Z" secondAttribute="centerX" id="fhq-4U-b3u"/>
+                <constraint firstAttribute="trailing" secondItem="b8k-Ok-PhY" secondAttribute="trailing" constant="8" id="mYp-tr-RrI"/>
+                <constraint firstAttribute="trailing" secondItem="5hC-oz-faM" secondAttribute="trailing" id="zpN-eh-YI6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="233" y="531"/>
+        </view>
+    </objects>
+</document>
